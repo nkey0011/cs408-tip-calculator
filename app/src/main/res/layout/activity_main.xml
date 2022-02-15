@@ -10,42 +10,83 @@
         android:id="@+id/calculate"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Calculate"
-        tools:layout_editor_absoluteX="145dp"
-        tools:layout_editor_absoluteY="184dp" />
+        android:text="@string/calculate"
+        android:textSize="18sp"
+        tools:layout_editor_absoluteX="132dp"
+        tools:layout_editor_absoluteY="201dp" />
 
     <TextView
         android:id="@+id/total_bill"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="32dp"
-        android:text="TextView"
-        app:layout_constraintBottom_toTopOf="@+id/tip_percent"
-        tools:layout_editor_absoluteX="176dp" />
+        android:text="@string/total_bill"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toStartOf="@+id/guideline"
+        tools:layout_editor_absoluteY="46dp" />
 
     <TextView
         android:id="@+id/tip_percent"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="20dp"
-        android:text="TextView"
-        app:layout_constraintBottom_toTopOf="@+id/num_peop"
-        tools:layout_editor_absoluteX="176dp" />
+        android:text="@string/tip_percentage"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toStartOf="@+id/guideline"
+        tools:layout_editor_absoluteY="93dp" />
 
     <TextView
         android:id="@+id/num_peop"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="TextView"
-        tools:layout_editor_absoluteX="176dp"
-        tools:layout_editor_absoluteY="125dp" />
+        android:text="@string/number_of_people"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toStartOf="@+id/guideline"
+        tools:layout_editor_absoluteY="147dp" />
 
     <TextView
         android:id="@+id/result"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="TextView"
-        tools:layout_editor_absoluteX="176dp"
-        tools:layout_editor_absoluteY="252dp" />
+        android:text="@string/total_per_person"
+        android:textSize="18sp"
+        tools:layout_editor_absoluteX="135dp"
+        tools:layout_editor_absoluteY="264dp" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.50"
+        />
+
+    <EditText
+        android:id="@+id/tip_input"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="number"
+        android:textSize="14sp"
+        app:layout_constraintBaseline_toBaselineOf="@+id/tip_percent"
+        app:layout_constraintStart_toStartOf="@+id/guideline" />
+
+    <EditText
+        android:id="@+id/people_input"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="number"
+        android:textSize="14sp"
+        app:layout_constraintBaseline_toBaselineOf="@+id/num_peop"
+        app:layout_constraintStart_toEndOf="@+id/num_peop" />
+
+    <EditText
+        android:id="@+id/bill_input"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="numberDecimal"
+        android:textSize="14sp"
+        app:layout_constraintBaseline_toBaselineOf="@+id/total_bill"
+        app:layout_constraintStart_toStartOf="@+id/guideline" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
