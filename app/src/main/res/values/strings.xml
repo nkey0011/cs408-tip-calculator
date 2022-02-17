@@ -5,4 +5,7 @@
     <string name="total_per_person">Total Per Person:</string>
     <string name="number_of_people">Number of People:</string>
     <string name="calculate">Calculate</string>
+    <string name="people_input">0</string>
+    <string name="tip_input">0</string>
+    <string name="bill_input">0</string>
 </resources>
