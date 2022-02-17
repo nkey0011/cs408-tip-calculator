@@ -5,7 +5,7 @@ import java.text.*;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.EditText;
-import android.widget.TextView;
+
 
 import com.example.nkey_lab2a.databinding.ActivityMainBinding;
 
@@ -14,7 +14,7 @@ public class MainActivity extends AppCompatActivity {
 
     private ActivityMainBinding binding;
 
-    TextView output;
+
     EditText bill, tip, people;
 
     @Override
@@ -53,7 +53,7 @@ public class MainActivity extends AppCompatActivity {
                 NumberFormat money_format = NumberFormat.getCurrencyInstance();
                 String output = money_format.format(final_bill);
 
-                binding.result.setText("Total Per Person: " + output);
+                binding.result.setText("Price Per Person: " + output);
             }
         });
 

@@ -53,7 +53,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="32dp"
         android:gravity="center_vertical|end"
-        android:text="@string/number_of_people"
+        android:text="@string/out_message"
         android:textSize="16sp"
         app:layout_constraintBottom_toTopOf="@+id/calculate"
         app:layout_constraintEnd_toStartOf="@+id/guideline"
@@ -132,5 +132,6 @@
         android:layout_height="wrap_content"
         android:orientation="horizontal"
         app:layout_constraintGuide_percent="0.50" />
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>

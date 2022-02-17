@@ -8,4 +8,5 @@
     <string name="people_input">0</string>
     <string name="tip_input">0</string>
     <string name="bill_input">0</string>
+    <string name="out_message">Total Per Person: </string>
 </resources>
